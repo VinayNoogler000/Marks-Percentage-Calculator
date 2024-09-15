@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary: #393e3e;
+    --secondary: #145c72;
+    --secondary-light: #00a0d1;
+}
+
+@layer base {
+    * {
+        @apply box-border border-0 m-0 p-0;	
+    }
+
+    input[type="number"] {
+        @apply w-[25rem] min-w-[15rem] cursor-text text-white placeholder:text-white bg-transparent	px-[1rem] py-[0.5rem] border-2 border-white rounded-xl focus:outline-none focus:border-[var(--secondary)];
+    }
+
+    button {
+        @apply w-44 text-white px-[1.5rem] py-[0.5rem] rounded-xl transition hover:opacity-75 active:opacity-100 cursor-pointer;
+    }
+
+    .result span {
+        @apply underline font-bold;
+    }
+
+    .alert {
+        @apply bg-red-300 rounded-xl p-4 px-6 text-red-700 !important;
+    }
+
+    /* ----------------------Responsiveness (For Mobile)-------------------- */
+    @media (min-width: 300px) and (max-width: 450px) {
+        input[type="number"] {
+            font-size: 15px;
+            padding: 0.7rem 1.5rem;
+            border-radius: 7px;
+        }
+
+        button {
+            @apply w-72;
+            font-size: 16px;
+            padding: 0.75rem 2rem;
+            border-radius: 7px;
+        }
+        
+        p {
+            font-size: 18px !important;
+            line-height: 20px !important;
+        }
+
+        .alert {
+            @apply text-[2.8rem] leading-[3rem] !important;
+        }
+    }
+
+    @media (max-width:350px) {
+        button {
+            width: 18rem;
+        }
+   }
+}

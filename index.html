@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" class="font-['Poppins'] min-[300px]:text-[35.5%] min-[400px]:max-[450px]:text-[40.5%] min-[451px]:text-[45.5%] min-[768px]:text-[60.5%] min-[1024px]:text-[65.5%] min-[1440px]:text-[70.5%] min-[1920px]:text-[75.5%] min-[2560px]:text-[95.5%]">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Vinay Tambey" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Marks & Percentage Calculator - VT</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body class="text-[1.6rem]">
+
+        <main class="w-full h-screen bg-[url('assets/background.png')] bg-cover flex items-center">
+            
+            <div class="max-w-[60rem] ml-[7rem] max-[1024px]:m-auto"> <!-- Form Container -->
+                <h1 class="heading text-center text-[2.7rem] font-medium leading-[3rem] text-[var(--primary)] mb-[2rem] max-[450px]:text-[4.5rem] max-[450px]:leading-[5rem] "> Calculate Your <br/> <span class=" text-[3rem] font-bold max-[450px]:text-[5rem]"> Marks and Percentage </span></h1>
+                
+                <form class="w-full bg-[var(--primary)] p-[3rem] border-2 rounded-3xl border-[var(--secondary)] grid grid-cols-[repeat(2,_1fr)] gap-[3rem] place-items-center">
+                    <input type="number" name="maths" placeholder="Maths" min="0" max="100" />
+                    <input type="number" name="science" placeholder="Science" min="0" max="100" />
+                    <input type="number" name="english" placeholder="English" min="0" max="100" />
+                    <input type="number" name="computer" placeholder="Computer" min="0" max="100" />
+
+                    <div class="m-auto mt-4	col-span-2 flex justify-between gap-40 max-[450px]:gap-56 max-[375px]:gap-48">
+                        <button type="submit" class="bg-[var(--secondary)] active:bg-[var(--secondary-light)]"> Calculate </button>
+                        <button type="reset" class="reset-btn bg-red-600 active:bg-red-800" >Reset</button> 
+                    </div>
+
+                    <p class="result mt-4 text-center text-white text-3xl col-span-2 opacity-0">You Scored <span>[Num]</span> Marks and Your Percentage is <span>[Num]</span>.</p>
+                </form>
+            </div>
+
+        </main>
+
+        <script src="app.js"></script>
+    </body>
+</html>
