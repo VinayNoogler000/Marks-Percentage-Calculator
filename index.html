@@ -1,37 +1,176 @@
 <!DOCTYPE html>
-<html lang="en" class="font-['Poppins'] min-[300px]:text-[35.5%] min-[400px]:max-[450px]:text-[40.5%] min-[451px]:text-[45.5%] min-[768px]:text-[60.5%] min-[1024px]:text-[65.5%] min-[1440px]:text-[70.5%] min-[1920px]:text-[75.5%] min-[2560px]:text-[95.5%]">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="author" content="Vinay Tambey" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Marks & Percentage Calculator - VT</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
+<html lang="en"
+    class="font-['Poppins'] min-[300px]:text-[35.5%] min-[400px]:text-[40.5%] min-[451px]:text-[45.5%] min-[550px]:text-[51.5%] min-[650px]:text-[56.5%] min-[768px]:text-[60.5%] min-[1024px]:text-[65.5%] min-[1440px]:text-[70.5%] min-[1920px]:text-[75.5%] min-[2560px]:text-[95.5%]">
 
-    <body class="text-[1.6rem]">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Vinay Tambey" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marks & Percentage Calculator - VT</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
 
-        <main class="w-full h-screen bg-[url('assets/background.png')] bg-cover flex items-center">
-            
-            <div class="max-w-[60rem] ml-[7rem] max-[1024px]:m-auto"> <!-- Form Container -->
-                <h1 class="heading text-center text-[2.7rem] font-medium leading-[3rem] text-[var(--primary)] mb-[2rem] max-[450px]:text-[4.5rem] max-[450px]:leading-[5rem] "> Calculate Your <br/> <span class=" text-[3rem] font-bold max-[450px]:text-[5rem]"> Marks and Percentage </span></h1>
+<body class="text-[1.6rem]">
+
+    <main class="w-full h-screen bg-[url('assets/background.png')] bg-cover flex items-center">
+
+        <div class="max-w-[60rem] ml-[7rem] max-[1024px]:m-auto"> <!-- Form Container -->
+            <h1 class="heading text-center text-[2.7rem] font-medium leading-[3rem] text-[var(--primary)] mb-[2rem] max-[450px]:text-[4.5rem] max-[450px]:leading-[5rem] ">
+                <span class=" text-[3rem] font-bold max-[450px]:text-[5rem]"> Marks and Percentage </span> <br />
+                Calculator
+            </h1>
+
+            <form class="w-full bg-[var(--primary)] p-[3rem] border-2 rounded-3xl border-[var(--secondary)] grid grid-cols-[repeat(2,_1fr)] gap-[3rem] place-items-center">
                 
-                <form class="w-full bg-[var(--primary)] p-[3rem] border-2 rounded-3xl border-[var(--secondary)] grid grid-cols-[repeat(2,_1fr)] gap-[3rem] place-items-center">
-                    <input type="number" name="maths" placeholder="Maths" min="0" max="100" />
-                    <input type="number" name="science" placeholder="Science" min="0" max="100" />
-                    <input type="number" name="english" placeholder="English" min="0" max="100" />
-                    <input type="number" name="computer" placeholder="Computer" min="0" max="100" />
+                <!-----------------------------👇 MARKS-INPUT CONTAINERS 👇----------------------------->
+                <div class="input-container">
+                    <input id="maths" type="number" name="maths" placeholder="Maths" min="0" max="100" />
+                    
+                    <label for="maths" class="p-0 absolute opacity-0 cursor-text text-white leading-[2rem] bg-[var(--primary)] transition-all duration-300">Maths</label>
+                
+                    <abbr title="Delete marks-input box"> 
+                        <button class="del-btn" type="button">
+                            <svg class="del-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
+                        </button> 
+                    </abbr>
+                </div>
 
-                    <div class="m-auto mt-4	col-span-2 flex justify-between gap-40 max-[450px]:gap-56 max-[375px]:gap-48">
-                        <button type="submit" class="bg-[var(--secondary)] active:bg-[var(--secondary-light)]"> Calculate </button>
-                        <button type="reset" class="reset-btn bg-red-600 active:bg-red-800" >Reset</button> 
+                <div class="input-container">
+                    <input id="science" type="number" name="science" placeholder="Science" min="0" max="100" />
+                    
+                    <label for="science" class="p-0 absolute opacity-0 cursor-text text-white leading-[2rem] bg-[var(--primary)] transition-all duration-300">Science</label>
+                    
+                    <abbr title="Delete marks-input box"> 
+                        <button class="del-btn" type="button">
+                            <svg class="del-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
+                        </button> 
+                    </abbr>
+                </div>
+
+                <div class="input-container">
+                    <input id="english" type="number" name="english" placeholder="English" min="0" max="100" />
+                    
+                    <label for="english" class="p-0 absolute opacity-0 cursor-text text-white leading-[2rem] bg-[var(--primary)] transition-all duration-300">English</label>
+                    
+                    <abbr title="Delete marks-input box"> 
+                        <button class="del-btn" type="button">
+                            <svg class="del-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
+                        </button> 
+                    </abbr>
+                </div>
+
+                <div class="input-container">
+                    <input id="computer" type="number" name="computer" placeholder="Computer" min="0" max="100" />
+                    
+                    <label for="computer" class="p-0 absolute opacity-0 cursor-text text-white leading-[2rem] bg-[var(--primary)] transition-all duration-300">Computer</label>
+                    
+                    <abbr title="Delete marks-input box"> 
+                        <button class="del-btn" type="button">
+                            <svg class="del-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
+                        </button> 
+                    </abbr>
+                </div>
+
+                <!-----------------------👇 CALCULATE, ADD-SUBJECT & RESET BUTTONS 👇---------------------->
+                <div class="m-auto mt-4	col-span-2 flex justify-between gap-32 max-[768px]:gap-20 max-[450px]:gap-10">
+                    
+                    <abbr title="Calculate total marks & percentage and generate result."> <!--Calculate Btn-->
+                        <button type="submit" class="calc-btn bg-[var(--secondary)] active:bg-[var(--secondary-light)]"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M64 0C28.7 0 0 28.7 0 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-384c0-35.3-28.7-64-64-64L64 0zM96 64l192 0c17.7 0 32 14.3 32 32l0 32c0 17.7-14.3 32-32 32L96 160c-17.7 0-32-14.3-32-32l0-32c0-17.7 14.3-32 32-32zm32 160a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zM96 352a32 32 0 1 1 0-64 32 32 0 1 1 0 64zM64 416c0-17.7 14.3-32 32-32l96 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-96 0c-17.7 0-32-14.3-32-32zM192 256a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm32 64a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zm64-64a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm32 64a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zM288 448a32 32 0 1 1 0-64 32 32 0 1 1 0 64z"/></svg>
+                            Calculate 
+                        </button> 
+                    </abbr>
+
+                    <abbr title="Add a marks-input box for a new subject."> <!--Add-Subject Btn-->
+                        <button type="button" class="add-sub-btn bg-lime-600 active:bg-lime-500"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"/></svg>
+                            Add-Subject 
+                        </button> 
+                    </abbr>
+
+                    <abbr title="Empty all the marks-input box and remove the result."> <!--Reset Btn-->
+                        <button type="reset" class="reset-btn bg-red-800 active:bg-red-700"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M105.1 202.6c7.7-21.8 20.2-42.3 37.8-59.8c62.5-62.5 163.8-62.5 226.3 0L386.3 160 352 160c-17.7 0-32 14.3-32 32s14.3 32 32 32l111.5 0c0 0 0 0 0 0l.4 0c17.7 0 32-14.3 32-32l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 35.2L414.4 97.6c-87.5-87.5-229.3-87.5-316.8 0C73.2 122 55.6 150.7 44.8 181.4c-5.9 16.7 2.9 34.9 19.5 40.8s34.9-2.9 40.8-19.5zM39 289.3c-5 1.5-9.8 4.2-13.7 8.2c-4 4-6.7 8.8-8.1 14c-.3 1.2-.6 2.5-.8 3.8c-.3 1.7-.4 3.4-.4 5.1L16 432c0 17.7 14.3 32 32 32s32-14.3 32-32l0-35.1 17.6 17.5c0 0 0 0 0 0c87.5 87.4 229.3 87.4 316.7 0c24.4-24.4 42.1-53.1 52.9-83.8c5.9-16.7-2.9-34.9-19.5-40.8s-34.9 2.9-40.8 19.5c-7.7 21.8-20.2 42.3-37.8 59.8c-62.5 62.5-163.8 62.5-226.3 0l-.1-.1L125.6 352l34.4 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L48.4 288c-1.6 0-3.2 .1-4.8 .3s-3.1 .5-4.6 1z"/></svg>
+                            Reset 
+                        </button> 
+                    </abbr>
+                </div>
+
+                <!----------------------------------👇 RESULT 👇---------------------------------->
+                <div class="result hidden mt-8 p-6 bg-white rounded-xl shadow-lg border-4 border-blue-500 col-span-2 transform transition-all duration-300 animate-fade-in-down hover:scale-105 w-full max-w-2xl mx-auto ">
+                    
+                    <h2 class="result-title">
+                        <svg class="w-8 h-auto mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path> </svg>
+                        Result
+                    </h2>
+
+                    <p class="alert-msg hidden text-center"></p> 
+
+
+                    <!----------👇 STATS (MARKS, TOTAL-MARKS, PERCENTAGE & GRADE VALUES 👇---------->
+                    <div class="stats space-y-6 text-5xl">
+                        
+                        <!--------------------👇 MARKS & TOTAL-MARKS VALUES 👇----------------->
+                        <p class="marks flex items-center justify-center">
+                            <svg class="w-9 h-auto mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01">
+                                </path>
+                            </svg>
+                            Marks:
+
+                            <span class="marks-val font-semibold text-blue-600 ml-4">380</span>
+                            <span class="text-gray-500">/</span>
+                            <span class="total-marks font-semibold text-blue-600">400</span>
+                        </p>
+
+                        <!--------------------👇 PERCENTAGE VALUES 👇----------------->
+                        <p class="percentage flex items-center justify-center">
+                            <svg class="w-9 h-auto mr-3 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z">
+                                </path>
+                            </svg>
+                            Percentage:
+
+                            <span class="percentage-val font-semibold text-green-600 ml-4">98%</span>
+                        </p>
+
+                        <!--------------------👇 GRADE VALUES 👇----------------->
+                        <p class="grade flex items-center justify-center">
+                            <svg class="w-9 h-auto mr-3 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
+                                </path>
+                            </svg>
+                            Grade:
+
+                            <span class="grade-val font-semibold text-purple-600 ml-4">A</span>
+                            <span class="grade-remarks text-sm sm:text-base bg-purple-100 text-purple-800 px-3 py-1 rounded-full ml-3">Excellent</span>
+                        </p>
                     </div>
+                </div>
+            </form>
 
-                    <p class="result mt-4 text-center text-white text-3xl col-span-2 opacity-0">You Scored <span>[Num]</span> Marks and Your Percentage is <span>[Num]</span>.</p>
-                </form>
-            </div>
+            <!-- ------------------------👇 Link to Access GitHub-Repo 👇------------------------ -->
+            <div class="mt-[3rem] text-center">
+                <abbr title="View and contribute to the source code on GitHub">
+                    <a href="https://github.com/VinayNoogler000/Marks-Percentage-Calculator" target="_blank" rel="noopener noreferrer" class="github-button">
+                        <svg class="w-10 h-10 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                        </svg>
+                        View on GitHub
+                  </a>
+                </abbr>
+              </div>
+        </div>
 
-        </main>
+    </main>
 
-        <script src="app.js"></script>
-    </body>
+
+    <!--👇 JavaScript Files Linked -->
+    <script src="https://kit.fontawesome.com/3466756a59.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
 </html>

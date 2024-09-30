@@ -5,59 +5,224 @@
 
 :root {
     --primary: #393e3e;
-    --secondary: #145c72;
-    --secondary-light: #00a0d1;
+    --secondary: #2563eb;
+    --secondary-light: #3b82f6;
 }
 
 @layer base {
     * {
-        @apply box-border border-0 m-0 p-0;	
+        @apply box-border border-0 m-0 p-0;
+    }
+
+    abbr {
+        @apply no-underline;
+    }
+
+
+    .input-container {
+        @apply w-[25rem] min-w-[15rem] bg-transparent px-[1rem] py-[0.5rem] border-2 border-white rounded-xl focus:border-[var(--secondary)] flex justify-between items-center gap-2;
     }
 
     input[type="number"] {
-        @apply w-[25rem] min-w-[15rem] cursor-text text-white placeholder:text-white bg-transparent	px-[1rem] py-[0.5rem] border-2 border-white rounded-xl focus:outline-none focus:border-[var(--secondary)];
+        @apply w-full cursor-text text-white placeholder:text-white bg-transparent focus:outline-none;
     }
 
-    button {
-        @apply w-44 text-white px-[1.5rem] py-[0.5rem] rounded-xl transition hover:opacity-75 active:opacity-100 cursor-pointer;
+    input[type="number"]:focus ~ label, input[type="number"]:not(:placeholder-shown) ~ label {
+        @apply translate-y-[-1.9rem] opacity-100 text-[100%];
     }
 
-    .result span {
-        @apply underline font-bold;
+    input[type="number"]::placeholder {
+        @apply transition-opacity duration-150 ease-linear;
     }
 
-    .alert {
-        @apply bg-red-300 rounded-xl p-4 px-6 text-red-700 !important;
+    input[type="number"]:focus {
+        @apply placeholder:opacity-0;
     }
 
-    /* ----------------------Responsiveness (For Mobile)-------------------- */
+    /* 👇 To Remove Spinners from the Input Elements */
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* 👇 Styling for Delete Buttons */
+    .del-btn {
+        @apply w-9 h-9 rounded-full bg-red-800 text-white cursor-pointer flex items-center 
+            justify-center transition-all duration-300;
+    }
+    
+    .del-btn:hover {
+        @apply bg-red-600 scale-110 shadow-xl shadow-red-800;
+    }
+    
+    .del-btn svg {
+        @apply w-[1.35rem] h-auto transition-transform duration-300;
+    }
+    
+    .del-btn:hover svg {
+        @apply scale-110;
+    }
+
+    /* 👇 Styling for "Result" */
+    .result .result-title {
+        @apply text-6xl font-bold mb-8 flex justify-center items-center;
+    }
+
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .animate-fade-in-down {
+        animation: fadeInDown 0.5s ease-out;
+    }
+
+
+    /* 👇 Styling for Calculate, Add-Subject & Reset Buttons */
+    .calc-btn,
+    .add-sub-btn,
+    .reset-btn {
+        @apply text-white px-[1.5rem] py-[0.5rem] rounded-xl cursor-pointer transition-all ease-in-out flex items-center justify-center;
+    }
+
+    .calc-btn svg {
+        @apply w-5 h-5 mr-2 text-current fill-none stroke-2;
+    }
+
+    .add-sub-btn svg,
+    .reset-btn svg {
+        @apply w-5 h-5 mr-2;
+    }
+
+    .calc-btn:hover {
+        @apply bg-[var(--secondary-light)] scale-105 shadow-2xl shadow-blue-800;
+    }
+
+    .add-sub-btn:hover {
+        @apply bg-lime-500 scale-105 shadow-2xl shadow-green-800;
+    }
+
+    .reset-btn:hover {
+        @apply bg-[#f00] scale-105 shadow-2xl shadow-red-800;
+    }
+
+
+    /* Styling for "Alert" Element */
+    .result.alert {
+        @apply bg-red-100 border-4 border-red-500 text-red-700 p-4 mb-4 rounded-md shadow-2xl;
+    }
+    
+    .result.alert .result-title {
+        @apply text-red-700 text-5xl font-bold mb-6 flex justify-center items-center;
+    }
+    
+    .result.alert .result-title svg {
+        @apply w-12 h-12 mr-2 text-red-500;
+    }
+    
+    .result.alert .alert-msg {
+        @apply text-red-600 text-3xl;
+    }
+    
+    /* Add a subtle animation */
+    @keyframes alertPulse {
+        0% { opacity: 1; }
+        50% { opacity: 0.8; }
+        100% { opacity: 1; }
+    }
+    
+    .result.alert {
+        animation: alertPulse 2s ease-in-out infinite;
+    }
+
+
+    /* 👇 Styling for GitHub Button */
+    .github-button {
+        @apply inline-flex justify-center items-center px-4 py-2 bg-gray-800 border border-transparent rounded-xl font-semibold text-white uppercase tracking-widest active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 transition ease-in-out duration-150;
+    }
+
+    .github-button:hover {
+        @apply bg-gray-900 transform scale-105 shadow-xl shadow-gray-500;
+    }
+
+
+    /* ----------------------Responsiveness-------------------- */
+    @media (max-width: 640px) {
+        input[type="number"]:focus ~ label, input[type="number"]:not(:placeholder-shown) ~ label {
+            @apply translate-y-[-1.9rem];
+        }
+
+        .github-button {
+            @apply text-[1.6rem] px-6;
+        }
+        
+        .github-button svg {
+            @apply w-8 h-8;
+        }
+    }
+
     @media (min-width: 300px) and (max-width: 450px) {
-        input[type="number"] {
-            font-size: 15px;
+        .input-container {
             padding: 0.7rem 1.5rem;
             border-radius: 7px;
         }
 
-        button {
-            @apply w-72;
-            font-size: 16px;
-            padding: 0.75rem 2rem;
+        input[type="number"] {
+            font-size: 2rem;
+        }
+
+        input[type="number"]:focus ~ label, input[type="number"]:not(:placeholder-shown) ~ label {
+            @apply translate-y-[-2.5rem] text-[2rem];
+        }
+
+        .calc-btn,
+        .add-sub-btn,
+        .reset-btn {
+            width: fit-content;
+            font-size: 2rem;
+            padding: 0.6rem 1.5rem;
             border-radius: 7px;
         }
         
-        p {
-            font-size: 18px !important;
-            line-height: 20px !important;
+        .calc-btn svg,
+        .add-sub-btn svg,
+        .reset-btn svg {
+            @apply w-6 h-6 mr-3;
+        }
+        
+        .del-btn {
+            @apply w-[3rem] h-[3rem];
+        }
+
+        .del-btn svg {
+            @apply w-9 h-9;
         }
 
         .alert {
             @apply text-[2.8rem] leading-[3rem] !important;
         }
+
+        .github-button {
+            @apply text-[2rem] py-[0.6rem] px-[1.5rem] rounded-2xl;
+        }
+        
+        .github-button svg {
+            @apply w-9 h-9;
+        }
     }
 
     @media (max-width:350px) {
-        button {
+        .calc-btn,
+        .add-sub-btn,
+        .reset-btn {
             width: 18rem;
         }
-   }
+    }
 }
