@@ -20,9 +20,9 @@ A responsive and user-friendly web application designed to help students calcula
 
 ## 🧰 Technologies Used
 
-- **HTML5**: For structuring the content.
-- **CSS3 (Tailwind CSS)**:  For styling and layout with utility-first CSS framework, including Flexbox and Grid for responsive design.
-- **JavaScript (ES6+)**: For handling the dynamic calculations, form validation, and interactive elements.
+- **HTML5**: For structuring the core layout and content.
+- **CSS3 (Tailwind CSS)**:  For styling and layout with utility-first CSS framework, including Flexbox and Grid for responsive and visually appealing design
+- **JavaScript (ES6+)**: For handling the dynamic calculations, form validation, interactive elements, and result presentation.
 - **Font Awesome Icons**: For adding icons to the elements.
 
 ## 💡 What I Learned
