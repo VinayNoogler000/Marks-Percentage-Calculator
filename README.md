@@ -12,16 +12,24 @@ A responsive and user-friendly web application designed to help students calcula
 - **Dynamic Subject Manipulation**: Easily add/remove subjects on-the-fly.
 - **Real-time Calculation**: Instant computation of total marks, percentage and grade.
 - **Grade Assignmen**t: Automatic grade allocation based on percentage.
-- **Responsive Design**: Optimized for various screen sizes and devices
+- **Dynamic Results:** Results are displayed in real-time with animation, including marks, percentage, and grade.
+- **Responsive Design**: By using **CSS Flexbox** and **Grid**, making it fully optimized for various screen sizes and devices.
 - **Interactive UI**: Smooth animations and transitions for better user experience
 - **Input Validation & Error Handling**: Ensures valid marks entry within the 0-100 range
 
 ## 🧰 Technologies Used
 
-- HTML5
-- CSS3 (Tailwind CSS)
-- JavaScript (ES6+)
-- Font Awesome Icons
+- **HTML5**: For structuring the content.
+- **CSS3 (Tailwind CSS)**:  For styling and layout with utility-first CSS framework, including Flexbox and Grid for responsive design.
+- **JavaScript (ES6+)**: For handling the dynamic calculations, form validation, and interactive elements.
+- **Font Awesome Icons**: For adding icons to the elements.
+
+## 💡 What I Learned
+
+- Implemented dynamic input fields and validations.
+- Mastered using JavaScript to dynamically update and calculate data from multiple inputs.
+- Improved understanding of Tailwind CSS for responsive and flexible layouts.
+- Enhanced JavaScript skills for handling form submissions and real-time calculations.
 
 ## 🚀 Live Demo
 
