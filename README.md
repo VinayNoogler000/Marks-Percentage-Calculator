@@ -1,15 +1,16 @@
 # Marks and Percentage Calculator
 
-![Marks and Percentage Calculator](https://img.shields.io/badge/Calculator-Marks%20%26%20Percentage-blue)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+[![View Project](https://img.shields.io/badge/View-Project-blue)](https://marks-and-percentage-calculator-by-vt.b-cdn.net/)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-black)](https://github.com/VinayNoogler000/Marks-Percentage-Calculator)
+[![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)](https://github.com/VinayNoogler000/Marks-Percentage-Calculator/blob/main/index.html)
+[![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://github.com/VinayNoogler000/Marks-Percentage-Calculator/blob/main/style.css)
+[![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)](https://github.com/VinayNoogler000/Marks-Percentage-Calculator/blob/main/app.js)
 
 A responsive and user-friendly web application designed to help students calculate their total marks and percentage across multiple subjects, and generate a grade based on the percentage, offering a seamless experience for students to track their academic performance.
 
 ## 🌟 Features
 
-- **Dynamic Subject Manipulation**: Easily add/remove subjects on-the-fly.
+- **Dynamic Subject Input**: Easily add or remove subject fields to accommodate various academic structures.
 - **Real-time Calculation**: Instant computation of total marks, percentage and grade.
 - **Grade Assignmen**t: Automatic grade allocation based on percentage.
 - **Dynamic Results:** Results are displayed in real-time with animation, including marks, percentage, and grade.
