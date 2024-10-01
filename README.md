@@ -86,7 +86,7 @@ Found a bug? Please open an issue with a clear description and steps to reproduc
 
 Distributed under the MIT License. See [LICENSE](https://github.com/VinayNoogler000/Marks-Percentage-Calculator/blob/main/LICENSE) for more information.
 
-## 👨‍💻 Author
+## 👨‍💻 Developer & Owner 
 
 **Vinay Tambey**
 - Email: [Send Email to Vinay](mailto:vinaytambey000@gmail.com)
@@ -94,10 +94,14 @@ Distributed under the MIT License. See [LICENSE](https://github.com/VinayNoogler
 - GitHub: [@VinayNoogler000](https://github.com/VinayNoogler000)
 - Twitter/X: [@VinayNoogler000](https://x.com/VinayNoogler000)
 
+Let's connect and collaborate! I'm always open to new opportunities in frontend web development.
+
 ## 📊 Project Status
 
-This project is currently in development. Users can calculate marks and percentages, but we're always looking to add new features and improvements!
+This project is, currently, not in development by the Owner, but we're always looking to add new features and improvements!
 
+## Hashtags
+#webdevelopment #javascript #html #css #tailwindcss #frontend #studenttools #education #calculator #opensource
 ---
 
 ⭐️ If you found this project helpful, please consider giving it a star!
