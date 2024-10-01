@@ -64,21 +64,25 @@ Contributions are what make the open-source community such an amazing place to l
 4. Push to the Branch (`git push origin feature/AmazingFeature`).
 5. Open a Pull Request.
 
+## 🐛 Bug Reporting
+
+Found a bug? Please open an issue with a clear description and steps to reproduce. Your input helps make this project better for everyone!
+
+## 🙏 Acknowledgments
+
+- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework.
+- [Font Awesome](https://fontawesome.com/) for the icons used in the project.
+
 ## 📝 License
 
-This project is [MIT](https://github.com/VinayNoogler000/Marks-Percentage-Calculator/blob/main/LICENSE) licensed.
+Distributed under the MIT License. See [LICENSE](https://github.com/VinayNoogler000/Marks-Percentage-Calculator/blob/main/LICENSE) for more information.
 
 ## 👨‍💻 Author
 
 **Vinay Tambey**
 
 - GitHub: [@VinayNoogler000](https://github.com/VinayNoogler000)
-- LinkedIn: [Vinay Tambey](https://www.linkedin.com/in/vinay-tambey)
-
-## 🙏 Acknowledgments
-
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Font Awesome](https://fontawesome.com/)
+- LinkedIn: [Vinay Tambey](https://www.linkedin.com/in/vinaytambey)
 
 ## 📊 Project Status
 
