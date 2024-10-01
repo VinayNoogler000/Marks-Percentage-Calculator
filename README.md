@@ -8,6 +8,7 @@
 
 A responsive and user-friendly web application designed to help students calculate their total marks and percentage across multiple subjects, and generate a grade based on the percentage, offering a seamless experience for students to track their academic performance.
 
+
 ## 🌟 Features
 
 - **Dynamic Subject Input**: Easily add or remove subject fields to accommodate various academic structures.
@@ -18,12 +19,14 @@ A responsive and user-friendly web application designed to help students calcula
 - **Input Validation & Error Handling**: Ensures valid marks entry within the 0-100 range.
 - **Interactive UI**: Smooth animations and transitions for better user experience.
 
+
 ## 🧰 Technologies Used
 
 - **HTML5**: For structuring the core layout and content.
 - **CSS3 (Tailwind CSS)**:  For styling and layout with utility-first CSS framework, including Flexbox and Grid for responsive and visually appealing design
 - **JavaScript (ES6+)**: For handling the dynamic calculations, form validation, interactive elements, and result presentation.
 - **Font Awesome Icons**: For adding icons to the elements.
+
 
 ## 💡 What I Learned
 
@@ -32,13 +35,16 @@ A responsive and user-friendly web application designed to help students calcula
 - Improved understanding of Tailwind CSS for responsive and flexible layouts.
 - Enhanced JavaScript skills for handling form submissions and real-time calculations.
 
+
 ## 🚀 Live Demo
 
 Check out the live demo: [Marks and Percentage Calculator](https://marks-and-percentage-calculator-by-vt.b-cdn.net/)
 
+
 ## 📸 Screenshots
 
 ![Marks and Percentage Calculator](https://i.postimg.cc/zGXdRM0J/Marks-Calculator.png)
+
 
 ## 🛠️ Installation
 
@@ -63,6 +69,7 @@ To run this project locally:
 4. Use "Delete Icon" to delete subjects.
 4. "Reset" clears all inputs and results.
 
+
 ## 🤝 Contributing
 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**. If you would like to improve the functionality, design, or add new features, feel free to:
@@ -73,18 +80,22 @@ Contributions are what make the open-source community such an amazing place to l
 4. Push to the Branch (`git push origin feature/AmazingFeature`).
 5. Open a Pull Request.
 
+
 ## 🐛 Bug Reporting
 
 Found a bug? Please open an issue with a clear description and steps to reproduce. Your input helps make this project better for everyone!
+
 
 ## 🙏 Acknowledgments
 
 - [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework.
 - [Font Awesome](https://fontawesome.com/) for the icons used in the project.
 
+
 ## 📝 License
 
 Distributed under the MIT License. See [LICENSE](https://github.com/VinayNoogler000/Marks-Percentage-Calculator/blob/main/LICENSE) for more information.
+
 
 ## 👨‍💻 Developer & Owner 
 
@@ -96,9 +107,11 @@ Distributed under the MIT License. See [LICENSE](https://github.com/VinayNoogler
 
 Let's connect and collaborate! I'm always open to new opportunities in frontend web development.
 
+
 ## 📊 Project Status
 
 This project is, currently, not in development by the Owner, but we're always looking to add new features and improvements!
+
 
 ## Hashtags
 #webdevelopment #javascript #html #css #tailwindcss #frontend #studenttools #education #calculator #opensource
