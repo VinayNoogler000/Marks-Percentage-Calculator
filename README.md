@@ -9,7 +9,7 @@ A responsive and user-friendly web application designed to help students calcula
 
 ## 🌟 Features
 
-- **Dynamic Subject Manipulation**: Easily add/remove new subjects on-the-fly.
+- **Dynamic Subject Manipulation**: Easily add/remove subjects on-the-fly.
 - **Real-time Calculation**: Instant computation of total marks, percentage and grade.
 - **Grade Assignmen**t: Automatic grade allocation based on percentage.
 - **Responsive Design**: Optimized for various screen sizes and devices
