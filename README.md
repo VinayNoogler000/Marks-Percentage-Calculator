@@ -14,9 +14,9 @@ A responsive and user-friendly web application designed to help students calcula
 - **Real-time Calculation**: Instant computation of total marks, percentage and grade.
 - **Grade Assignmen**t: Automatic grade allocation based on percentage, along with encouraging remarks.
 - **Dynamic Results:** Results are displayed in real-time with animation, including marks, percentage, and grade.
-- **Responsive Design**: By using **CSS Flexbox** and **Grid**, making it fully optimized for various screen sizes and devices.
-- **Interactive UI**: Smooth animations and transitions for better user experience
-- **Input Validation & Error Handling**: Ensures valid marks entry within the 0-100 range
+- **Responsive Design**: Used **CSS Flexbox** and **Grid**, to make it fully optimized for various screen sizes and devices.
+- **Input Validation & Error Handling**: Ensures valid marks entry within the 0-100 range.
+- **Interactive UI**: Smooth animations and transitions for better user experience.
 
 ## 🧰 Technologies Used
 
