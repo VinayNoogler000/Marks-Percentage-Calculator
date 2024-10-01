@@ -1,8 +1,11 @@
 # Marks and Percentage Calculator
 
-![Marks and Percentage Calculator](https://i.postimg.cc/zGXdRM0J/Marks-Calculator.png)
+![Marks and Percentage Calculator](https://img.shields.io/badge/Calculator-Marks%20%26%20Percentage-blue)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-A responsive web application that calculates marks, percentage, and grade for students based on individual subject scores.
+A responsive and user-friendly web application designed to help students calculate their total marks and percentage across multiple subjects, and generate a grade based on the percentage, offering a seamless experience for students to track their academic performance.
 
 ## 🌟 Features
 
@@ -23,6 +26,10 @@ A responsive web application that calculates marks, percentage, and grade for st
 ## 🚀 Live Demo
 
 Check out the live demo: [Marks and Percentage Calculator](https://marks-and-percentage-calculator-by-vt.b-cdn.net/)
+
+## 📸 Screenshots
+
+![Marks and Percentage Calculator](https://i.postimg.cc/zGXdRM0J/Marks-Calculator.png)
 
 ## 🏁 Getting Started
 
