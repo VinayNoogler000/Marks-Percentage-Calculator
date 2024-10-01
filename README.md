@@ -36,13 +36,13 @@ Check out the live demo: [Marks and Percentage Calculator](https://marks-and-per
 To run this project locally:
 
 1. Clone the repository:  
-```
+ ```
  git clone https://github.com/VinayNoogler000/Marks-Percentage-Calculator.git
-```
+ ```
 2. Navigate to the project directory:
-```
+ ```
  cd Marks-Percentage-Calculator
-```
+ ```
 3. Open `index.html` in your browser.
 
 
@@ -58,9 +58,15 @@ To run this project locally:
 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
+1. Fork the Project.
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the Branch (`git push origin feature/AmazingFeature`).
+5. Open a Pull Request.
+
 ## 📝 License
 
-This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
+This project is [MIT](https://github.com/VinayNoogler000/Marks-Percentage-Calculator/blob/main/LICENSE) licensed.
 
 ## 👨‍💻 Author
 
