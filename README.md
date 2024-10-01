@@ -16,7 +16,7 @@ A responsive and user-friendly web application designed to help students calcula
 - **Interactive UI**: Smooth animations and transitions for better user experience
 - **Input Validation & Error Handling**: Ensures valid marks entry within the 0-100 range
 
-## 🛠️ Technologies Used
+## 🧰 Technologies Used
 
 - HTML5
 - CSS3 (Tailwind CSS)
@@ -31,23 +31,32 @@ Check out the live demo: [Marks and Percentage Calculator](https://marks-and-per
 
 ![Marks and Percentage Calculator](https://i.postimg.cc/zGXdRM0J/Marks-Calculator.png)
 
-## 🏁 Getting Started
+## 🛠️ Installation
 
 To run this project locally:
 
-1. Clone the repository: `git clone https://github.com/VinayNoogler000/Marks-Percentage-Calculator.git`
-2. Open `index.html` in your browser.
+1. Clone the repository:  
+```
+ git clone https://github.com/VinayNoogler000/Marks-Percentage-Calculator.git
+```
+2. Navigate to the project directory:
+```
+ cd Marks-Percentage-Calculator
+```
+3. Open `index.html` in your browser.
+
 
 ## 💡 Usage
 
-1. Enter marks for each subject (0-100).
-2. Click "Calculate" to see the result.
+1. Enter marks for each subject, ranging (0-100).
+2. Click "Calculate" to see the result (total marks, percentage, and grade).
 3. Use "Add Subject" to include more subjects.
+4. Use "Delete Icon" to delete subjects.
 4. "Reset" clears all inputs and results.
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/VinayNoogler000/Marks-Percentage-Calculator/issues).
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 ## 📝 License
 
