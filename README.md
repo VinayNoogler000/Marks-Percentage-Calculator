@@ -80,9 +80,10 @@ Distributed under the MIT License. See [LICENSE](https://github.com/VinayNoogler
 ## 👨‍💻 Author
 
 **Vinay Tambey**
-
-- GitHub: [@VinayNoogler000](https://github.com/VinayNoogler000)
+- Email: [Send Email to Vinay](mailto:vinaytambey000@gmail.com)
 - LinkedIn: [Vinay Tambey](https://www.linkedin.com/in/vinaytambey)
+- GitHub: [@VinayNoogler000](https://github.com/VinayNoogler000)
+- Twitter/X: [@VinayNoogler000](https://x.com/VinayNoogler000)
 
 ## 📊 Project Status
 
