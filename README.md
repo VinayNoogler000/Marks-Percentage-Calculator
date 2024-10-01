@@ -1,6 +1,6 @@
 # Marks and Percentage Calculator
 
-![Marks and Percentage Calculator](https://marks-and-percentage-calculator-by-vt.b-cdn.net/assets/screenshot.png)
+![Marks and Percentage Calculator](https://i.postimg.cc/zGXdRM0J/Marks-Calculator.png)
 
 A responsive web application that calculates marks, percentage, and grade for students based on individual subject scores.
 
