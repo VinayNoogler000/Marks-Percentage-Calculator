@@ -88,3 +88,7 @@ Distributed under the MIT License. See [LICENSE](https://github.com/VinayNoogler
 ## 📊 Project Status
 
 This project is currently in development. Users can calculate marks and percentages, but we're always looking to add new features and improvements!
+
+---
+
+⭐️ If you found this project helpful, please consider giving it a star!
