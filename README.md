@@ -9,12 +9,12 @@ A responsive and user-friendly web application designed to help students calcula
 
 ## 🌟 Features
 
-- Dynamic input fields for subjects
-- Real-time calculation of total marks, percentage, and grade
-- Responsive design for various screen sizes
-- Interactive UI with smooth animations
-- Add/remove subjects dynamically
-- Input validation and error handling
+- **Dynamic Subject Manipulation**: Easily add/remove new subjects on-the-fly.
+- **Real-time Calculation**: Instant computation of total marks, percentage and grade.
+- **Grade Assignmen**t: Automatic grade allocation based on percentage.
+- **Responsive Design**: Optimized for various screen sizes and devices
+- **Interactive UI**: Smooth animations and transitions for better user experience
+- **Input Validation & Error Handling**: Ensures valid marks entry within the 0-100 range
 
 ## 🛠️ Technologies Used
 
