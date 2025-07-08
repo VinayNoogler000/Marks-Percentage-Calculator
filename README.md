@@ -38,7 +38,7 @@ A responsive and user-friendly web application designed to help students calcula
 
 ## 🚀 Live Demo
 
-Check out the live demo: [Marks and Percentage Calculator](https://marks-and-percentage-calculator-by-vt.b-cdn.net/)
+Check out the live demo: [Marks and Percentage Calculator](https://marks-percentage-calculator.vercel.app/)
 
 
 ## 📸 Screenshots
